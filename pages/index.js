@@ -4,6 +4,7 @@ import Header from "../components/ui/Header";
 import CharacterGrid from "../components/characters/CharacterGrid";
 import Search from "../components/ui/Search";
 import "./index.module.css";
+import Head from 'next/head'
 
 const index = () => {
   const [items, setItems] = useState([]);
@@ -27,6 +28,10 @@ const index = () => {
 
   return (
     <div className="container">
+     <Head>
+     <title>Breaking Bad Cast</title>
+           </Head>
+
       <Header />
       <Search getQuery={(q) => setQuery(q)} />
       <CharacterGrid isLoading={isLoading} items={items} />
