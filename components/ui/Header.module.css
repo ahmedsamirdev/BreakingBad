@@ -1,0 +1,8 @@
+.center {
+  margin: 1rem 0;
+}
+.center > img {
+  width: auto;
+  margin: 0 auto;
+  cursor: pointer;
+}
